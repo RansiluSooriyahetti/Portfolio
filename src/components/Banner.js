@@ -60,7 +60,7 @@ export default function Banner() {
             <Heading textAlign={"center"}>RANSILU SOORIYAHETTI</Heading>
 
             <Text fontSize={"sm"} textAlign="center">
-              I am an IT From University of Moratuwa undergraduate who is
+              I am an IT undergraduate From University of Moratuwa who is
               enthusiastic about exploring and learning new technologies.
             </Text>
 
