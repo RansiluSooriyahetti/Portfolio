@@ -3,7 +3,7 @@ import {
   Container,
   IconButton,
   Stack,
-  Text,
+ 
 } from "@chakra-ui/react";
 import * as React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
