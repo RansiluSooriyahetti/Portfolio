@@ -71,19 +71,23 @@ export default function Header() {
           direction={"row"}
           spacing={6}
         >
+          <a href="https://drive.google.com/file/d/1V6G_UXmvypVQA3NK60LUHOzmezJJCwwV/view?usp=sharing"> 
           <Button
             display={{ base: "inline-flex", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
             bg={"primary.700"}
-            href={"#"}
+            href={
+              "https://drive.google.com/file/d/1V6G_UXmvypVQA3NK60LUHOzmezJJCwwV/view?usp=sharing"
+            }
             _hover={{
               bg: "primary.900",
             }}
           >
             View Resume
-          </Button>
+          </Button></a>
+          
         </Stack>
       </Flex>
 
