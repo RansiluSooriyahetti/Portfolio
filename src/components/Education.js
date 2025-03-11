@@ -16,7 +16,7 @@ const milestones = [
     id: 1,
     date: "2013",
     title: "Nalanda College - Colombo",
-    description: `9As for G.C.E Advanced Level `,
+    description: `9As for G.C.E Ordinary Level`,
   },
   {
     id: 2,
@@ -26,9 +26,21 @@ const milestones = [
   },
   {
     id: 3,
+    date: "2019 Oct -2021 June",
+    title: "Netex Enginnering - \nJunior network technician",
+    description: "Experienced technician skilled in network infrastructure installation, fiber optic deployment, server hardware configuration, and technical troubleshooting.",
+  },
+  {
+    id: 4,
     date: "Present",
     title: "University of Moratuwa",
-    description: "Current GPA - 3.32 (up to Level 2 Semester 1)",
+    description: "Current GPA - 3.5\nLevel 3 Semester 1 - 3.81 (Dean's list)",
+  },
+  {
+    id: 4,
+    date: "2024 Jan - 2024 Sep",
+    title: "Revocare Solutions - \nSoftware Engineer Intern",
+    description: "Full-stack developer who contributed to the multi-faceted Altrogi platform, encompassing CRM, trading, HR, and portfolio management systems for the Skynet team. Leveraged a comprehensive technology stack including SpringBoot, PostgreSQL, React TS, and Tailwind CSS for development, while implementing robust testing frameworks (Cypress, Cucumber, Vitest, JUnit) and configuration technologies (Prometheus, k6, Swagger) for monitoring and documentation.\n2024 Sep - Present contract basic",
   },
 ];
 
@@ -141,10 +153,10 @@ const Card = ({ id, title, description, date }) => {
         </Text>
 
         <VStack spacing={2} mb={3} textAlign="left">
-          <chakra.h1 fontSize="xl" lineHeight={1.2} fontWeight="bold" w="100%">
+          <chakra.h1 fontSize="md" lineHeight={1.2} fontWeight="bold" w="100%" whiteSpace="pre-line">
             {title}
           </chakra.h1>
-          <Text fontSize="sm">{description}</Text>
+          <Text fontSize="sm" whiteSpace="pre-line">{description}</Text>
         </VStack>
       </Box>
     </HStack>

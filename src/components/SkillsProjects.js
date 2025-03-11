@@ -5,16 +5,20 @@ import CustomSkillTag from "./utils/CustomSkillTag";
 import FrameworkTag from "./utils/FrameworkTag";
 import DatabaseTag from "./utils/DatabaseTag";
 import ToolTag from "./utils/ToolTag";
+import WebDevelopmentTag from "./utils/WebDevelopmentTag";
+import TestingTechnologyTag from "./utils/TestingTechnologyTag";
 
 export default function SkillsProjects() {
   return (
-    <Container maxW={"7xl"} alignItems="center" my={5}>
+    <Container maxW={"7xl"} alignItems="center" my={5} overflow="hidden">
       <Flex
+        height={"100%"}
         width={"100%"}
         maxW={["full", "full", "7xl"]}
         justifyContent="center"
         alignItems={"center"}
         flexDir={["column", "column", "row", "row"]}
+        flexWrap="wrap"
       >
         <Box
           me={["0", "0", "8"]}
@@ -40,8 +44,8 @@ export default function SkillsProjects() {
           justifyContent="start"
           bgColor={"white"}
           color="black"
-          maxHeight="2xl"
-          minHeight={"4xl"}
+          maxHeight="100%"
+          overflowY="auto"
           borderRadius="3xl"
           p="10"
           mb={10}
@@ -66,18 +70,17 @@ export default function SkillsProjects() {
             />
             {/* Icons  */}
 
-            <Wrap>
+            <Wrap spacing="2" shouldWrapChildren={true} overflow="hidden">
               <CustomSkillTag skill={"Java"} />
               <CustomSkillTag skill={"Javascript"} />
               <CustomSkillTag skill={"C"} />
-              <CustomSkillTag skill={"HTML"} />
-              <CustomSkillTag skill={"CSS"} />
             </Wrap>
           </Box>
+          
           <Box my={2}>
             <Heading textAlign={"start"} as="h4" fontSize={"lg"}>
               {" "}
-              Frameworks
+              Web Development
             </Heading>
             <Box
               orientation="horizontal"
@@ -85,11 +88,30 @@ export default function SkillsProjects() {
               my={3}
               height={0.2}
             />
-            <Wrap>
-              <FrameworkTag skill={"Spring Boot"} />
-              <FrameworkTag skill={"React JS"} />
+            <Wrap spacing="2" shouldWrapChildren={true} overflow="hidden">
+              <WebDevelopmentTag skill={"React JS/TS"} />
+              <WebDevelopmentTag skill={"Tailwind CSS"} />
+              <WebDevelopmentTag skill={"HTML"} />
+              <WebDevelopmentTag skill={"CSS"} />
             </Wrap>
           </Box>
+
+          <Box my={2}>
+            <Heading textAlign={"start"} as="h4" fontSize={"lg"}>
+              {" "}
+              Backend Technologies
+            </Heading>
+            <Box
+              orientation="horizontal"
+              bgColor="gray.300"
+              my={3}
+              height={0.2}
+            />
+            <Wrap spacing="2" shouldWrapChildren={true} overflow="hidden">
+              <FrameworkTag skill={"Spring Boot"} />
+            </Wrap>
+          </Box>
+          
           <Box my={2}>
             <Heading textAlign={"start"} as="h4" fontSize={"lg"}>
               {" "}
@@ -101,11 +123,32 @@ export default function SkillsProjects() {
               my={3}
               height={0.2}
             />
-            <Wrap>
+            <Wrap spacing="2" shouldWrapChildren={true} overflow="hidden">
               <DatabaseTag skill={"MySQL"} />
+              <DatabaseTag skill={"PostgreSQL"} />
               <DatabaseTag skill={"MSSQL"} />
             </Wrap>
           </Box>
+          
+          <Box my={2}>
+            <Heading textAlign={"start"} as="h4" fontSize={"lg"}>
+              {" "}
+              Testing Technologies
+            </Heading>
+            <Box
+              orientation="horizontal"
+              bgColor="gray.300"
+              my={3}
+              height={0.2}
+            />
+            <Wrap spacing="2" shouldWrapChildren={true} overflow="hidden">
+              <TestingTechnologyTag skill={"Cypress"} />
+              <TestingTechnologyTag skill={"Cucumber"} />
+              <TestingTechnologyTag skill={"Vitest"} />
+              <TestingTechnologyTag skill={"JUnit"} />
+            </Wrap>
+          </Box>
+          
           <Box my={5}>
             <Heading textAlign={"start"} as="h4" fontSize={"lg"}>
               {" "}
@@ -119,16 +162,14 @@ export default function SkillsProjects() {
               height={0.2}
             />
 
-            <Wrap>
-              <ToolTag skill={"Postman"} />
-              <ToolTag skill={"VS Code"} />
-              <ToolTag skill={"Blender"} />
-              <ToolTag skill={"Git"} />
+            <Wrap spacing="2" shouldWrapChildren={true} overflow="hidden">
               <ToolTag skill={"Github"} />
-              <ToolTag skill={"Figma"} />
+              <ToolTag skill={"Prometheus"} />
+              <ToolTag skill={"Grafana"} />
+              <ToolTag skill={"Docker"} />
+              <ToolTag skill={"Swagger"} />
+              <ToolTag skill={"Linux"} />
               <ToolTag skill={"VS Code"} />
-              <ToolTag skill={"MySQL Workbench"} />
-              <ToolTag skill={"Proteus Simulation"} />
             </Wrap>
           </Box>
         </Flex>

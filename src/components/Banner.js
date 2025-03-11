@@ -238,7 +238,7 @@ export default function Banner() {
           p="10"
           mb={10}
         >
-          <Heading>Education</Heading>
+          <Heading>Education and Work Experience</Heading>
           <Education />
         </Box>
       </Flex>

@@ -27,6 +27,27 @@ const milestones = [
     description: `I successfully contributed to the development of a web application for a laundry service, where i played a key role in designing and implementing Delivery person Dashboard. This dashboard integrated with Google maps, various data which helpful for delivery and pickup management.`,
     tech: ["React.js", "SpringBoot", "MySQL"],
   },
+  {
+    id: 3,
+    date: "2024",
+    title: "Cypress - Cucumber test suite for UI and API ",
+    description: `I successfully contributed to implement test suite for both UI and API testing. Focused on e2e testing and validating functionality and reliability of web application(UI) and book management system(API).`,
+    tech: ["Cypress", "Cucumber", "Github actions"],
+  },
+  {
+    id: 4,
+    date: "2024",
+    title: "CRM for managing small scale company (ongoing)",
+    description: `Working on a CRM project which help to create quotation, invoices, manage HR and relevant functionalities.functionality implemented such a way user can dynamically change structure in generating pdf.`,
+    tech: ["SpringBoot", "PostgreSQL", "react TS", "tailwind CSS"],
+  },
+  {
+    id: 5,
+    date: "2025",
+    title: "Analysis on the effect of Metadata changes on the views of YouTube Videos in Sri Lankan Context (ongoing)",
+    description: `Final year research project (ongoing)\n\nDeveloping a predicting models in both machine learning models and statistical models for getting view count prediction and compare accuracy on each model on time series data.use YouTube API to get trending video data and make time series data collection and evaluate on statistical and machine learning models.`,
+    tech: ["Python", "Machine Learning", "Statistical models"],
+  },
 ];
 
 const Projects = () => {
