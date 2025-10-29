@@ -40,7 +40,7 @@ const milestones = [
     id: 4,
     date: "2024 Jan - 2024 Sep",
     title: "Revocare Solutions - \nSoftware Engineer Intern",
-    description: "Full-stack developer who contributed to the multi-faceted Altrogi platform, encompassing CRM, trading, HR, and portfolio management systems for the Skynet team. Leveraged a comprehensive technology stack including SpringBoot, PostgreSQL, React TS, and Tailwind CSS for development, while implementing robust testing frameworks (Cypress, Cucumber, Vitest, JUnit) and configuration technologies (Prometheus, k6, Swagger) for monitoring and documentation.\n2024 Sep - Present contract basic",
+    description: "Full-stack developer who contributed to the multi-faceted platform, encompassing CRM, trading, HR, and portfolio management systems for the Skynet team. Leveraged a comprehensive technology stack including SpringBoot, PostgreSQL, React TS, and Tailwind CSS for development, while implementing robust testing frameworks (Cypress, Cucumber, Vitest, JUnit) and configuration technologies (Prometheus, k6, Swagger) for monitoring and documentation.\n2024 Sep - Present contract basic",
   },
 ];
 
